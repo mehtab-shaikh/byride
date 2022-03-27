@@ -27,7 +27,7 @@ export class AppComponent {
   };
 
 
-  imagArray = ['cover.jpg', 'cover.jpg', 'cover.jpg'];
+  imagArray = ['men.jpg', 'women.jpeg', 'children.jpg'];
 
   featuredProducts = [
     {
