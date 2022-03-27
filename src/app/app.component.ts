@@ -95,7 +95,7 @@ export class AppComponent {
       price: '400.00'
     },
     {
-      imageSrc: 'vintage 1.jpeg',
+      imageSrc: 'vintage 1.jpg',
       title: 'Mountain CG3E-Fat Bike Racing Ride Road Off-road Bicycle',
       price: '500.00'
     },
