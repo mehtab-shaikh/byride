@@ -1,0 +1,191 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold text-center" href="#">
+      <img src="../assets/images/LOGO.png" width="50" class="d-inline-block align-text-top rounded-3">
+      <br/>
+      RAYDOO!
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav  mb-2 mb-lg-0 ms-auto fw-bold text-uppercase fs-5">
+        <li class="nav-item">
+          <a class="nav-link active text-primary" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#">Bikes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">ACCESSORIES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Bikes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Account</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container-fluid p-0" style="margin-top: 100px;">
+  <!-- Cover Story -->
+  <section class="headerBg">
+    <div class="container p-5">
+      <div class="row row-cols-md-2 row-cols-1 h-100   ">
+        <div class="col  pt-md-5 mt-md-5 mb-3 ">
+          <h3>GIVE YOUR WORKOUT
+            A LITTLE MORE SPACE!</h3>
+          <p>“It never gets easier, you just go faster
+            A bicycle ride around the world begins with a single pedal stroke”</p>
+          <button class="btn btn-outline-primary">
+            Explore Now <i class="fas fa-long-arrow-alt-right"></i>
+          </button>
+        </div>
+
+        <div class="col mb-3">
+          <img src="../assets/images/cover.jpg" class="img-fluid rounded-3">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mt-5 ">
+    <div class="row row-cols-md-4 row-cols-1 justify-content-center">
+      <div class="col mb-3" *ngFor="let item of imagArray">
+        <img src="../assets/images/{{item}}" class="img-fluid rounded-3">
+      </div>
+    </div>
+  </section>
+
+  <section class="container mt-5 ">
+    <h1 class="text-center title position-relative">Featured Products</h1>
+    <div class="row row-cols-md-4 row-cols-1 justify-content-center mt-5">
+      <div class="col mb-3" *ngFor="let item of featuredProducts">
+        <div class="card">
+          <img src="../assets/images/{{item.imageSrc}}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{item.title}}</h5>
+            <p class="card-text">&#8377; {{item.price}}</p>
+            <a href="#" class="btn btn-outline-primary">Buy Now <i class="fas fa-long-arrow-alt-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="container mt-5 ">
+    <h1 class="text-center title position-relative">Latest Products</h1>
+    <div class="row row-cols-md-4 row-cols-1 justify-content-center mt-5">
+      <div class="col mb-3" *ngFor="let item of featuredProducts">
+        <div class="card">
+          <img src="../assets/images/{{item.imageSrc}}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{item.title}}</h5>
+            <p class="card-text">&#8377; {{item.price}}</p>
+            <a href="#" class="btn btn-outline-primary">Buy Now <i class="fas fa-long-arrow-alt-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="headerBg">
+    <div class="container p-5">
+      <div class="row row-cols-md-2 row-cols-1 h-100   ">
+        <div class="col mb-3">
+          <img src="../assets/images/cover.jpg" class="img-fluid rounded-3" width="500">
+        </div>
+
+        <div class="col  pt-md-1 mt-md-5 mb-3 ">
+          <p class="text-secondary">Exclusively available on RYDOO.in</p>
+          <h5>Vital MTB</h5>
+          <p>bicycle, also called bike, two-wheeled steerable machine that is pedaled by the rider's feet. On a standard bicycle the wheels are mounted in-line in a metal frame, with the front wheel held in a rotatable fork. The rider sits on a saddle and steers by leaning and turning handlebars that are attached to the fork</p>
+          <button class="btn btn-outline-primary">
+            Click Here to Get it <i class="fas fa-long-arrow-alt-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mt-5 ">
+    <h1 class="text-center title position-relative">Customer Review</h1>
+    <div class="row row-cols-md-4 justify-content-center mt-5">
+      <div class="col mb-3" *ngFor="let item of reviewData">
+        <div class="card border-0 shadow rounded-0 p-4">
+          <div class="card-body">
+            <i class="fas fa-quote-left"></i>
+            <img src="../assets/images/{{item.imageSrc}}" class="img-fluid d-block mx-auto" width="100">
+            <h5 class="card-title text-center mt-4">{{item.custName}}</h5>
+            <p class="card-text text-center">{{item.custComments}}</p>
+            <div class="text-center text-warning">
+              <i class="fas fa-star p-1" *ngFor='let in of counter(item.rating);'></i>
+            </div>
+            <i class="fas fa-quote-right"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mt-5 ">
+    <owl-carousel-o [options]="customOptions">
+      <ng-template carouselSlide *ngFor="let item of brandArr">
+        <img src="../assets/images/brand/{{item}}" class="img-fluid BrandImg d-block mx-auto">
+      </ng-template>
+    </owl-carousel-o>
+  </section>
+
+  <section class="bg-black text-white mt-5 p-5">
+    <footer class="container">
+      <div class="row row-cols-lg-4 row-cols-lg-3 row-cols-1 justify-content-center">
+        <div class="col mb-3">
+          <h4>Download</h4>
+          <p>Download the bicycles from our website for better experience</p>
+          <img src="../assets/images/appstore.png" class="img-fluid" width="100">
+          <img src="../assets/images/plastore.png" class="img-fluid" width="150">
+        </div>
+        <div class="col mb-3">
+          <img src="../assets/images/LOGO.png" width="50" class="img-fluid d-block mx-auto rounded-3">
+          <p class="text-center">Our purpose is to maintain the quality, and smille on each customer face 😊.</p>
+        </div>
+        <div class="col mb-3">
+          <h4>Useful Links</h4>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active">Coupons</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Blog Post</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ">Return Policy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active">Join Affiliate</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>Follow Us</h4>
+          <i class="fab fa-facebook fs-3 p-2"></i>
+          <i class="fab fa-twitter fs-3 p-2"></i>
+          <i class="fab fa-instagram fs-3 p-2"></i>
+          <i class="fab fa-youtube fs-3 p-2"></i>
+        </div>
+      </div>
+      <hr />
+      <p class="text-center">@Copyright 2020 - RYDOO</p>
+    </footer>
+  </section>
+</div>

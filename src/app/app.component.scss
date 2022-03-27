@@ -1,0 +1,22 @@
+.headerBg {
+    background: radial-gradient(rgb(165, 195, 197), #c7b2b2);
+}
+
+.title::after {
+    content: '';
+    background: #ff523b;
+    width: 150px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    margin-bottom: -25px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.BrandImg {
+    width: 200px !important;
+    height: 200px !important;
+    object-fit: contain;
+  }
