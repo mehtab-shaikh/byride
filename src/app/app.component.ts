@@ -31,42 +31,86 @@ export class AppComponent {
 
   featuredProducts = [
     {
-      imageSrc: 'cover.jpg',
+      imageSrc: 'men 1.jpeg',
       title: 'Mountain CG3E-Fat Bike Racing Ride Road Off-road Bicycle',
       price: '100.00'
     },
     {
-      imageSrc: 'cover.jpg',
+      imageSrc: 'men 2.jpg',
       title: 'Mountain CG3E-Fat Bike Racing Ride Road Off-road Bicycle',
       price: '200.00'
     },
     {
-      imageSrc: 'cover.jpg',
+      imageSrc: 'men 3.jpg',
       title: 'Mountain CG3E-Fat Bike Racing Ride Road Off-road Bicycle',
       price: '300.00'
     },
     {
-      imageSrc: 'cover.jpg',
+      imageSrc: 'men 4.jpg',
       title: 'Mountain CG3E-Fat Bike Racing Ride Road Off-road Bicycle',
       price: '400.00'
     },
     {
-      imageSrc: 'cover.jpg',
+      imageSrc: 'women 1.jpeg',
       title: 'Mountain CG3E-Fat Bike Racing Ride Road Off-road Bicycle',
       price: '500.00'
     },
     {
-      imageSrc: 'cover.jpg',
+      imageSrc: 'women 2.jpg',
       title: 'Mountain CG3E-Fat Bike Racing Ride Road Off-road Bicycle',
       price: '600.00'
     },
     {
-      imageSrc: 'cover.jpg',
+      imageSrc: 'women 3.jpg',
       title: 'Mountain CG3E-Fat Bike Racing Ride Road Off-road Bicycle',
       price: '700.00'
     },
     {
-      imageSrc: 'cover.jpg',
+      imageSrc: 'women 4.jpg',
+      title: 'Mountain CG3E-Fat Bike Racing Ride Road Off-road Bicycle',
+      price: '800.00'
+    },
+  ];
+
+
+  latestProducts = [
+    {
+      imageSrc: 'L 1.webp',
+      title: 'Mountain CG3E-Fat Bike Racing Ride Road Off-road Bicycle',
+      price: '100.00'
+    },
+    {
+      imageSrc: 'L 2.jpg',
+      title: 'Mountain CG3E-Fat Bike Racing Ride Road Off-road Bicycle',
+      price: '200.00'
+    },
+    {
+      imageSrc: 'L 3.webp',
+      title: 'Mountain CG3E-Fat Bike Racing Ride Road Off-road Bicycle',
+      price: '300.00'
+    },
+    {
+      imageSrc: 'L 4.jpg',
+      title: 'Mountain CG3E-Fat Bike Racing Ride Road Off-road Bicycle',
+      price: '400.00'
+    },
+    {
+      imageSrc: 'vintage 1.jpeg',
+      title: 'Mountain CG3E-Fat Bike Racing Ride Road Off-road Bicycle',
+      price: '500.00'
+    },
+    {
+      imageSrc: 'vintage 2.jpg',
+      title: 'Mountain CG3E-Fat Bike Racing Ride Road Off-road Bicycle',
+      price: '600.00'
+    },
+    {
+      imageSrc: 'vintage 3.jpg',
+      title: 'Mountain CG3E-Fat Bike Racing Ride Road Off-road Bicycle',
+      price: '700.00'
+    },
+    {
+      imageSrc: 'vintage 4.jpg',
       title: 'Mountain CG3E-Fat Bike Racing Ride Road Off-road Bicycle',
       price: '800.00'
     },

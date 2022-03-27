@@ -71,7 +71,7 @@
     <div class="row row-cols-md-4 row-cols-1 justify-content-center mt-5">
       <div class="col mb-3" *ngFor="let item of featuredProducts">
         <div class="card">
-          <img src="../assets/images/{{item.imageSrc}}" class="card-img-top" alt="...">
+          <img src="../assets/images/Featured products/{{item.imageSrc}}" class="card-img-top catogImgFit" alt="...">
           <div class="card-body">
             <h5 class="card-title">{{item.title}}</h5>
             <p class="card-text">&#8377; {{item.price}}</p>
@@ -86,9 +86,9 @@
   <section class="container mt-5 ">
     <h1 class="text-center title position-relative">Latest Products</h1>
     <div class="row row-cols-md-4 row-cols-1 justify-content-center mt-5">
-      <div class="col mb-3" *ngFor="let item of featuredProducts">
+      <div class="col mb-3" *ngFor="let item of latestProducts">
         <div class="card">
-          <img src="../assets/images/{{item.imageSrc}}" class="card-img-top" alt="...">
+          <img src="../assets/images/latest products/{{item.imageSrc}}" class="card-img-top catogImgFit" alt="...">
           <div class="card-body">
             <h5 class="card-title">{{item.title}}</h5>
             <p class="card-text">&#8377; {{item.price}}</p>
